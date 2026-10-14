@@ -12,7 +12,7 @@ Each review must be **exported into a single persistent markdown file**:
 
 ### Mandatory First Step
 
-Before doing anything else, read:
+Before doing anything else, read, if the file doesn't exist create it :
 
 ```text
 docs/project-audit.md

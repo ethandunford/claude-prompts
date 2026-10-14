@@ -1,41 +1,9 @@
-update this claude prompt to work on this issue
-
-Look at these function
-
-
-export async function buildProgram(
-details: CreateProgramDetailsRequest,
-programData: ProgramWeekFormModel[],
-): Promise<ExcelJS.Workbook> {
-const workbook = new ExcelJS.Workbook();
-
-buildIntroduction(workbook);
-buildDetails(workbook, details);
-buildWorkout(workbook, programData);
-
-await workbook.xlsx.writeBuffer();
-return workbook;
-}
-
-
-and these ones
-buildIntroduction(workbook);
-buildDetails(workbook, details);
-buildWorkout(workbook, programData);
-
-and look at improving the ui bring fonts / size /colours inline with the rest of the app
-
-
-# {{EPIC_NAME}} Implementation Prompt
-
-You are a {{ROLE_1}}, {{ROLE_2}}, and {{ROLE_3}} working on this repository.
-
 ## Mandatory First Step
 
 Before doing anything else, read:
 
 ```text
-docs/project-audit.md
+docs/project-overview.md
 ```
 
 This document contains historical project knowledge, architectural decisions, implementation patterns, technical debt, known issues, coding conventions, and previous audit findings.
@@ -106,13 +74,10 @@ Description of work completed.
 
 Identify and complete all GitHub issues labelled:
 
-```text
-{{ISSUE_LABEL}}
-```
 
-Treat these issues as a single coordinated epic.
+Create all work under one epic branch.
 
-The goal is to deliver all {{DOMAIN}} improvements together in one release.
+https://github.com/ethandunford/workedout/issues/335
 
 ---
 
